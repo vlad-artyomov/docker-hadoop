@@ -60,6 +60,7 @@ ADD hdfs-site.xml $HADOOP_PREFIX/etc/hadoop/hdfs-site.xml
 
 ADD mapred-site.xml $HADOOP_PREFIX/etc/hadoop/mapred-site.xml
 ADD yarn-site.xml $HADOOP_PREFIX/etc/hadoop/yarn-site.xml
+ADD behemoth-site.xml $HADOOP_PREFIX/etc/hadoop/behemoth-site.xml
 
 RUN $HADOOP_PREFIX/bin/hdfs namenode -format
 
