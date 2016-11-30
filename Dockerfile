@@ -8,7 +8,7 @@ MAINTAINER SequenceIQ
 USER root
 
 # install dev tools
-RUN yum install -y yum-plugin-ovl
+RUN yum install -y yum-plugin-ovl ; yum clean all
 RUN yum clean all; \
     rpm --rebuilddb; \
     yum install -y curl which tar sudo openssh-server openssh-clients rsync
